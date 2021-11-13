@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Container } from 'react-bootstrap';
 import Historical from './componentes/Historical/Historical';
 import CurrentWeather from './componentes/CurrentWeather/CurrentWeather';
-import DropdownSection from './componentes/DropdownSection/DropdownSection';
+import CitySection from './componentes/CitySection/CitySection';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       </header>
       <body>
         <Container>          
-          <DropdownSection />         
+          <CitySection />         
           <CurrentWeather />            
           <Historical />          
         </Container>

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,KAAK;CACf",
     "sources": [
-        "DropdownSection.scss"
+        "CitySection.scss"
     ],
     "names": [],
-    "file": "DropdownSection.css"
+    "file": "CitySection.css"
 }
