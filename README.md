@@ -10,18 +10,20 @@ la ciudad configurada.
 - El checkbox incluir histórico deberá incluir al clima actual los últimos X registros del historial de
 consultas, en caso que esté seleccionado.
 - El botón consultar mostrará el estado del clima actual y la historia dependiendo del punto anterior.
-HERRAMIENTAS/TECNOLOGÍA
-● Para Back office: .NET Core API Rest
-● Para la GUI Angular
-● DataBase: SQL Server
+
+## HERRAMIENTAS/TECNOLOGÍA
+- Para Back office: .NET Core API Rest
+- Para la GUI Angular
+- DataBase: SQL Server
 API: http://openweathermap.org/current
 Ej: http://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,ar
-ASPECTOS EVALUADOS
-● Comunicación
-● Fecha de compromiso
-● Documentación del código
-● Buenas prácticas
-● Tecnologías aplicadas
-● Extensibilidad y mantenibilidad del código
-● Premisas y assumptions
+
+## ASPECTOS EVALUADOS
+- Comunicación
+- Fecha de compromiso
+- Documentación del código
+- Buenas prácticas
+- Tecnologías aplicadas
+- Extensibilidad y mantenibilidad del código
+- Premisas y assumptions
 Suerte!
