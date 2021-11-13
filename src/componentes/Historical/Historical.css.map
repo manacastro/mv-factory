@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,UAAU,EAAC,IAAI;CAClB",
+    "sources": [
+        "Historical.scss"
+    ],
+    "names": [],
+    "file": "Historical.css"
+}
