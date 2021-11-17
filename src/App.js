@@ -6,7 +6,10 @@ import Historical from './componentes/Historical/Historical';
 import CurrentWeather from './componentes/CurrentWeather/CurrentWeather';
 import CitySection from './componentes/CitySection/CitySection';
 
+
 function App() {
+
+
   return (
     
       <div className="App">
