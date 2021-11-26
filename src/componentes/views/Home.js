@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.scss';
 import { Container } from "react-bootstrap";
 import Historical from "../../componentes/Historical/Historical";
 import CurrentWeather from "../../componentes/CurrentWeather/CurrentWeather";
@@ -11,12 +12,14 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => (
-    <div className='general'>
-        <header>
+    <div >
+        <header  className='sectionTop'>
             <div>
-                <h2 className="title" >Informes del clima</h2>
-                <Link to='/CityConfiguration' ><FontAwesomeIcon icon={faCog} />Mas ciudades...</Link>
+                <h2 className="title" >Informe del clima</h2>
             </div>
+            <div className="link">
+                <Link to='/CityConfiguration' ><FontAwesomeIcon icon={faCog} />Mas ciudades...</Link>
+            </div>            
         </header>
         <body>
             <Container>

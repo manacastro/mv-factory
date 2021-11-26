@@ -37,7 +37,7 @@
     transform: rotate(360deg);
   }
 }
-.sectionTop{
+/* .sectionTop{
   display: flex;
   height: 35px;
   margin-bottom: 25px;
@@ -47,5 +47,5 @@
 .title{
   font-weight: 400;
   margin-bottom: 20px;
-}
+} */
 

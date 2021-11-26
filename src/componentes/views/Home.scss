@@ -1,0 +1,21 @@
+.sectionTop{
+    display: flex;
+    height: 35px;
+    align-items: stretch;
+    margin-top: 25px;
+    justify-content: center;
+    //background-color: red;
+  .title{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 260px;
+
+  }
+  .link{
+    align-items: center;
+    display: flex;
+    width: 392px;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
+}  
