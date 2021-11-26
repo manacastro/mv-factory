@@ -1,27 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './CurrentWeather.scss';
+import { useWeather } from "../../componentes/ContextWeather/ContextWeather";
 import { useCity } from "../../componentes/ContextCity/ContextCity";
 
 const CurrentWeather = () => {
-    const { selectedCity } = useCity();
+  const { city, timestamp, temperature, fellsLike, history } = useWeather();
+  const { selectedCity, changeCitySelected } = useCity();
+    
     return (
       <div>
+        
         <div class="current">
           <div class="label">
             Fecha:
-            <p class="data">27 de Septiembre de 2021</p>
+            <p class="data">{timestamp}</p>
           </div>
           <div class="label">
             Ciudad:
-            <p class="data">{selectedCity}</p>
+            <p class="data">{ selectedCity }</p>
+            <p class="data">{ city }</p>
           </div>
           <div class="label">
             Clima:
-            <p class="data">32°</p>
+            <p class="data">{temperature}</p>
           </div>
           <div class="label">
             Sens. térmica:
-            <p class="data">31°</p>
+            <p class="data">{fellsLike}</p>
           </div>
         </div>
       </div>

@@ -3,12 +3,13 @@ import Form from "react-bootstrap/Form";
 import './CitySection.scss'
 import Button from "react-bootstrap/Button";
 import { useCity } from "../../componentes/ContextCity/ContextCity";
-
+import { useWeather } from "../../componentes/ContextWeather/ContextWeather";
 
 const CitySection = () => {
     const { cities, selectedCity, changeCitySelected } = useCity();
     const [historySelected, setHistorySelected] = useState(false);
     const [canSubmit, setCanSubmit] = useState(false);
+    const { weather, selectedCityHistory, changeWeather } = useWeather();
   
     const handleDropdownChange = (e) => {
       changeCitySelected(e.target.value);
@@ -19,11 +20,15 @@ const CitySection = () => {
       setHistorySelected(e.target.value === "on");
     };
   
+    const handleWeather = (e) => {
+      changeWeather(selectedCity, historySelected);
+    };  
+
     if (cities && cities.length > 0) {
       return (
         <div class="citySearch">
-          <div className="city">
-            {/* <h1>{selectedCity}</h1> */}
+          <div className="city"> 
+                    
             <Form.Select
               aria-label="Default select example"
               className="dropdown"
@@ -37,7 +42,7 @@ const CitySection = () => {
             <input onChange={handleHistory} id="history" type="checkbox" />
             <label htmlFor="history">Incluir historico</label>
           </div>
-          <Button variant="primary" className="citytton" disabled={!canSubmit}>
+          <Button variant="primary" className="citytton" disabled={!canSubmit} onClick={handleWeather}>
             Consultar
           </Button>
         </div>
